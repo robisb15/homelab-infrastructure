@@ -13,7 +13,7 @@ This repository documents my journey in building a production-like home lab usin
 - [x] Docker
 - [x] Docker Compose
 - [x] Dockge
-- [ ] Portainer
+- [x] Portainer
 - [ ] Grafana
 - [ ] Prometheus
 - [ ] Homepage
