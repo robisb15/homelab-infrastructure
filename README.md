@@ -15,7 +15,8 @@ This repository documents my journey in building a production-like home lab usin
 - [x] Dockge
 - [x] Portainer
 - [ ] Grafana
-- [ ] Prometheus
+- [x] Prometheus
+- [x] Node Exporter
 - [ ] Homepage
 - [ ] Uptime Kuma
 - [ ] Jellyfin

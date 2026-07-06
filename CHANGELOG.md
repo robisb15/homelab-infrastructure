@@ -10,3 +10,12 @@
 - Docker Compose
 - Dockge
 - Portainer
+
+- ## [Unreleased]
+
+### Added
+
+- Deploy Prometheus
+- Deploy Node Exporter
+- Configure Prometheus scrape target
+- Create monitoring Docker network
