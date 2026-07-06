@@ -1,28 +1,35 @@
 # Monitoring Stack
 
-## Overview
-
-Monitoring Stack digunakan untuk memantau kondisi HomeLab dan seluruh container Docker.
-
-## Services
+## Service
 
 - Prometheus
-- Grafana
 - Node Exporter
-- cAdvisor
 
-## Architecture
+## Port
 
-Grafana
-↓
-Prometheus
-↑
-Node Exporter
-cAdvisor
+| Service | Port |
+|---------|------|
+| Prometheus | 9090 |
+| Node Exporter | 9100 |
 
-## Status
+## Cara Menjalankan
 
-- [ ] Prometheus
-- [ ] Grafana
-- [ ] Node Exporter
-- [ ] cAdvisor
+```bash
+docker compose up -d
+```
+
+## Cara Menghentikan
+
+```bash
+docker compose down
+```
+
+## Struktur
+
+- compose.yml
+- prometheus.yml
+- .env.example
+
+## Keterangan
+
+Prometheus mengambil metrics dari Node Exporter setiap 15 detik.
