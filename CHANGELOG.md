@@ -19,3 +19,8 @@
 - Deploy Node Exporter
 - Configure Prometheus scrape target
 - Create monitoring Docker network
+
+### Added
+
+- Grafana
+- Node Exporter Dashboard
