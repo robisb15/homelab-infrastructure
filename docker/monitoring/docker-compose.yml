@@ -43,12 +43,16 @@ services:
     privileged: true
     devices:
       - /dev/kmsg
+    command:
+      - '--allowlisted_container_labels=com.docker.swarm.service.name'
     volumes:
-      - /:/rootfs:ro
-      - /var/run:/var/run:ro
-      - /sys:/sys:ro
-      - /var/lib/docker:/var/lib/docker:ro
-      - /dev/disk:/dev/disk:ro
+        - /:/rootfs:ro
+        - /var/run:/var/run:ro
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+        - /sys:/sys:ro
+        - /var/lib/docker:/var/lib/docker:ro
+        - /var/lib/containerd:/var/lib/containerd:ro
+        - /dev/disk:/dev/disk:ro
     networks:
       - monitoring
     restart: unless-stopped
