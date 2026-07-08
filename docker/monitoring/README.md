@@ -33,3 +33,18 @@ docker compose down
 ## Keterangan
 
 Prometheus mengambil metrics dari Node Exporter setiap 15 detik.
+
+## Dashboard
+
+Grafana menggunakan dashboard:
+
+- Node Exporter Full (ID: 1860)
+
+## Monitoring
+
+- CPU
+- Memory
+- Disk
+- Filesystem
+- Network
+- Uptime
