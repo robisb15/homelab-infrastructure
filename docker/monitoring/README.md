@@ -51,3 +51,16 @@ Grafana menggunakan dashboard:
 - Filesystem
 - Network
 - Uptime
+
+## Monitoring Stack
+
+- Prometheus
+- Grafana
+- Node Exporter
+- cAdvisor
+
+### Features
+
+- Host Monitoring
+- Docker Monitoring
+- Resource Usage
