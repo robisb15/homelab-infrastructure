@@ -11,7 +11,7 @@ services:
       - monitoring
     restart: unless-stopped
   node-exporter:
-    image: prom/node-exporter:v1.9.1
+    image: prom/node-exporter:${NODEEXPORTER_VERSION}
     container_name: node-exporter
     ports:
       - "9100:9100"
@@ -23,8 +23,21 @@ services:
     networks:
       - monitoring
     restart: unless-stopped
+  grafana:
+    image: grafana/grafana:${GRAFANA_VERSION}
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      TZ: ${TZ}
+    volumes:
+      - grafana-data:/var/lib/grafana
+    networks:
+      - monitoring
+    restart: unless-stopped
 volumes:
   prometheus-data:
+  grafana-data:
 
 networks:
   monitoring:
