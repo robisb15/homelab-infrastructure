@@ -7,10 +7,13 @@
 
 ## Port
 
-| Service | Port |
-|---------|------|
-| Prometheus | 9090 |
-| Node Exporter | 9100 |
+| Service       | Fungsi                      | Port |
+| ------------- | --------------------------- | ---: |
+| Prometheus    | Time-series database        | 9090 |
+| Node Exporter | Monitoring host Ubuntu      | 9100 |
+| Grafana       | Dashboard visualisasi       | 3000 |
+| cAdvisor      | Monitoring container Docker | 8080 |
+
 
 ## Cara Menjalankan
 
