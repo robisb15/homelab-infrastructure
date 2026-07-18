@@ -43,8 +43,6 @@ services:
     privileged: true
     devices:
       - /dev/kmsg
-    command:
-      - '--allowlisted_container_labels=com.docker.swarm.service.name'
     volumes:
         - /:/rootfs:ro
         - /var/run:/var/run:ro
